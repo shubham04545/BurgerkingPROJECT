@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" href="https://img.icons8.com/color/512/burger-king-new-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer">
+    <style>
+        body{
+            background-color: rgba(240,223,201,0.539);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            background: rgb(248 241 231);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            justify-content: space-around;
+            border: solid 1px rgb(147, 93, 17);
+        }
+        #btn-header {
+            margin-left: 5px;
+            border: none;
+            padding-left: 3px;
+            background-color: red;
+            padding: 8px 15px;
+            border-radius: 10px;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #menu {
+            margin-right: 100px;
+        }
+        .first-part {
+            display: flex;
+            margin-left: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        #logo {
+            color: rgb(80 35 20);
+        }
+        h2 {
+            font-size: 50px;
+            width: 400px;
+            font-weight: bolder;
+            color: rgb(80 35 20);
+        }
+        #order-pickup {
+            border-radius: 20px;
+            padding: 20px 73px;
+            margin-bottom: 10px;
+            background-color: red;
+            color: white;
+            font-weight: bolder;
+        }
+        #order-delivery {
+            border-radius: 20px;
+            padding: 20px 70px;
+            background-color: rgb(248 241 231);
+            font-weight: bolder;
+        }
+        .cards{
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            flex-wrap: wrap;
+            gap:30px
+        }
+        .main{
+            width: 580px;
+            border: 1px solid rgb(232, 121, 62);
+            border-radius: 15px;
+            background: white;
+            margin-bottom: 170px;
+            margin-right: 50px;
+            height: 300px;
+
+           
+        }
+        .cards img{
+            height: 100%;
+            width: 100%;
+            border-radius: 15px 15px 0px 0px;
+        }
+        h4,p{
+            color: rgb(113, 59, 41);
+        }
+        h4,p{
+            margin:9px;
+        }
+        a{
+            margin-left: 8px;
+            font-size: small;
+            color: rgb(113, 59, 41);
+        }
+        .first-part{
+            margin-bottom: 80px;
+        }
+        #card-button{
+            color:rgb(113, 59, 41);
+            border-radius: 15px;
+            border: 1px solid rgb(113, 59, 41);
+            margin-left: 470px;
+            font-size: 12px;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .bottom{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: rgb(238 232 222);
+        }
+        #phone{
+            height: 800px;
+        }
+        #download button{
+            background-color: black;
+            color: white;
+            padding: 6px 20px;
+            border-radius: 12px;
+        }
+        #download{
+            width: 500px;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+        #bottom-line{
+            height: 50px;
+            background-color: brown;
+            
+        }
+        #bottom-line-para{
+            color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #footer{
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 200px;
+            background-color:rgb(248 241 231)
+        }
+        ol li{
+            list-style: none;
+            line-height: 22px;
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div id="menu"><i class="fa-solid fa-bars"></i></div>
+        <div id="logo"><h3>BURGER KING</h3></div>
+        <div id="shop"><i class="fa-solid fa-user"></i><button id="btn-header"><i class="fa-brands fa-get-pocket"></i> View cart</button></div>
+    </div>
+    <div class="first-part">
+        <div id="first-first">
+            <h2>Start your BK<sup>®</sup> order.</h2>
+            <button id="order-pickup"><i class="fa-solid fa-bag-shopping"></i> Order Pickup</button>
+            <br>
+            <button id="order-delivery"><i class="fa-solid fa-bicycle"></i> Order delivery</button>
+        </div>
+        <div id="first-second">
+            <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/1e428223ca223363c45fb34625589c9435cb7811-1134x638.png?w=650&q=90&fit=max&auto=format" alt="">
+        </div>
+    </div>
+    <div class="cards">
+        <div class="main">
+            <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/6cf88609f6ed3d13c2779644e34f8fce7b5887f4-2000x1000.jpg?w=650&q=80&fit=max&auto=format" alt="aaa">
+            <div class="notmain">
+            <h4>It's time to show odd your smarts!</h4>
+            <p>It's National Trivia Day! Prove your Walmart+ knowledge and get up to 100 bonus Crowns toward your BK® faves. Earn Crowns with every right answer!</p>
+            <a href="">see terms</a>
+            <br>
+            <button id="card-button" type="submit">Play now</button>
+          </div>
+          </div>
+          <div class="main ">
+            <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/99f36b3590f86a15388a4063e73374ee765e5c12-2000x1000.png?w=450&q=80&fit=max&auto=format" alt="">
+            <h4>Warm up this winter with a Melt Meal!</h4>
+            <p>Cozy days call for cozy flavors. Add some warm, cheesy goodness this winter with one of our digital-exclusive Melt Meals! </p>
+            <a href="">see terms</a>
+            <br>
+            <button id="card-button" type="submit">Order now</button>
+          </div>
+          <div class="main">
+            <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/4aeceeff6ec6f2e04fd26728d67ddbd3fab9b58e-2000x1000.png?w=450&q=80&fit=max&auto=format" alt="">
+            <h4>Save with Walmart+ and BK!</h4>
+            <p> Royal Perks members get 40% off an annual Walmart+ membership — which now includes BK ® digital savings, like 25% off your order, every day, and a FREE Whopper ® every three months with purchase!</p>
+            <a href="">see terms</a>
+            <br>
+            <button id="card-button" type="submit">Join Walmart+</button>
+          </div>
+          <div class="main">
+            <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/03d28f28ec8f30ee65dd9dcb037e64e4e7983e49-2000x1000.png?w=450&q=80&fit=max&auto=format" alt="">
+            <h4>$3 OFF any $20+ BK® delivery order!</h4>
+            <p>Save time and money with $3 OFF any $20+ BK® delivery order. At part. U.S. rest. Fees and higher prices apply. </p>
+            <a href="">see terms</a>
+            <br>
+            <button id="card-button" type="submit">Order Delivery</button>
+         </div>
+    </div>
+    <div class="bottom">
+        <div>
+            <img id="phone" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/fce87173f33b83388e766172fb1c471023582c4e-852x1183.png?w=900&q=80&fit=max&auto=format" alt="">
+        </div>
+        <div id="download">
+            <h4 id="download-heading">Save $$$</h4>
+            <h4 id="download-heading">With offers on demand</h4>
+            <button><i class="fa-brands fa-apple"></i><h5>Download on the</h5>
+            <h3>App Store</h3></button>
+            <button>
+                <table><tr><i class="fa-brands fa-google-play"></i></tr>
+                    <tr><h5>GET IT ON</h5><h3>Google Play</h3></tr>
+                </table></button>
+            <p>Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc. Google Play is a trademark of Google Inc. Terms apply.</p>
+
+        </div>
+    </div>
+        <div id="bottom-line">
+            <p id="bottom-line-para">M & Copyright 2025 Burger King Company LLC. All Rights Reserved <a id="bottom-line-para" href="">Do Not Sell Or Share My Personal Information</a></p>
+
+        </div>
+        <div id="footer">
+            <div id="footer1">
+                    <table>
+                        <tr>
+                            <th><i class="fa-solid fa-house"></i></th></tr>
+                        <tr>
+                            <th>Home</th>
+                        </tr>
+                    </table>
+            </div>
+            <div id="footer1">
+                    <table>
+                    <tr>
+                        <th><i class="fa-solid fa-burger"></i>
+                        </th></tr>
+                    <tr>
+                        <th>Menu</th>
+                    </tr>
+                </table>
+            </div>
+            <div id="footer1">
+                    <table>
+                    <tr>
+                        <th><i class="fa-regular fa-envelope"></i>
+                        </th></tr>
+                    <tr>
+                        <th>Offers</th>
+                    </tr>
+                </table>
+            </div>
+            <div id="footer1">
+                    <table>
+                    <tr>
+                        <th><i class="fa-solid fa-crown"></i>
+                        </th>
+                        </tr>
+                    <tr>
+                        <th>Rewards</th>
+                    </tr>
+                    </table>
+            </div>
+        </div>
+    
+</body>
+</html>
